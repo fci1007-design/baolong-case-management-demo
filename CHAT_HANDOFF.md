@@ -1,14 +1,19 @@
 # 寶隆 Demo 交接
 
-更新時間（Asia/Taipei）：2026-10-28 00:46:15 +0800
+更新時間（Asia/Taipei）：2026-10-28 00:48:11 +0800
 
 ## 最新狀態
 
-- 本輪目標／授權：Aaron 要求將專案推上自己的 GitHub；只做原始碼提交與推送，維持不部署。
-- 已完成：確認 GitHub CLI 帳號 `fci1007-design`、本專案獨立 Git 根目錄與原先沒有遠端；建立私人儲存庫 `https://github.com/fci1007-design/baolong-case-management-demo`，設定 `origin`。更新 README、AGENTS 及 DEPLOY 的來源與授權說明。
-- 已檢查：14 個候選原始檔約 179 KB，未發現已定義的憑證模式，截圖 artifacts 維持忽略；`git diff --check` 通過。程式未再修改，沿用前輪已完成的產品驗證，不重跑 UI 或完整測試。
-- Git：`main`，本輪提交前 HEAD `b838d979726c7812543c60e6750b99f423b0079b`；前輪 8 個修改檔與新增 products.js 待一起提交。尚未推送本輪完整版本。
-- 下一步第一項：提交目前 9 個變更檔，執行 `git push -u origin main`；查核遠端 SHA 與私人設定後補記結果。
+- 本輪目標已完成：依 Aaron 明確指示，將目前完整專案提交並推上自己的 GitHub；維持不部署網站。
+- 儲存庫：`https://github.com/fci1007-design/baolong-case-management-demo`，私人，擁有者 `fci1007-design`；預設分支與本機分支均為 `main`，`origin` 指向該 GitHub 儲存庫，已設定追蹤 `origin/main`。
+- 可確認的功能 commit／本紀錄更新前 HEAD：`f8152ea1308a75e6060602463f7a8ab056163eb8`，已提交並推送成功。此後只補記本輪交接與發布文件，文件紀錄將另行提交；接手以 `git log -1 --oneline` 核對最終 HEAD，不將功能版本 SHA 誤當永遠的最新 commit。
+- 原有程式變更皆已包含：商務用語與可讀性、獨立狀態日期、三產品類別、晶石板片數、酒品瓶／箱與分類報表。README、AGENTS、DEPLOY 已更新來源與本輪 GitHub 授權，未變更程式功能。
+- 驗證已通過：GitHub 遠端 main SHA 與本機功能 commit 完全一致；遠端 dist 包含 app.js、data.js、products.js、styles.css、index.html、favicon.svg；API 確認 private=true、default_branch=main、has_pages=false；`git diff --check` 通過。
+- 推送前檢查：14 個候選原始檔約 179 KB，已定義憑證模式未命中，artifacts 維持忽略；此為針對模式的檢查，不宣稱完整資安稽核。
+- 過程修正：首次提交因 Git 作者身分未設定而失敗；已只在本專案設定 GitHub 登入名稱與 noreply 信箱，重新提交及推送成功，未修改全域或其他專案設定。
+- 未執行：沒有重跑產品 UI／完整測試，因本輪只做版本保存及文件調整；前輪產品證據保留如下。沒有部署、Pages、Sites 同步或公開分享設定變更。
+- 本輪無背景程序。忽略的本機截圖與 browser localStorage 操作資料不在 Git 來源內。
+- 下一步第一項：在本專案執行 `git status -sb` 與 `git log -1 --oneline` 核對版本；要展示則執行 `open start-demo.command`。沒有新的明確部署指示，不發布網站。
 
 ## 前輪功能與驗證（2026-10-28 00:39，歷史）
 
@@ -49,3 +54,5 @@
 - 2026-10-27 23:01：初版曾 Sites 私有發布；來源 commit 如上，線上實開當時未驗。該版本僅為歷史，見 DEPLOY。
 - 2026-10-27 23:57：完成商務用語、深色大字及獨立案件狀態日期；依 Aaron 指示停止任何後續發布。
 - 2026-10-28 00:39:17 +0800：加入三產品類別、專屬進度、晶石板片數與酒品瓶／箱、建案多產品明細及分類報表；保留原資料，本機精簡驗證通過，未提交／推送／部署。
+
+- 2026-10-28 00:48:11 +0800：完整專案已推送至私人 GitHub 儲存庫，功能 commit f8152ea1308a75e6060602463f7a8ab056163eb8；遠端 SHA、檔案及未啟用 Pages 已確認，未部署。

@@ -1,12 +1,15 @@
 # 發布紀錄
 
-## 2026-10-28 00:46:15 +0800：GitHub 來源庫建立，準備推送
+## 2026-10-28 00:48:11 +0800：GitHub 原始碼推送成功
 
-- Aaron 明確要求將本專案推上 GitHub；已建立私人儲存庫 [https://github.com/fci1007-design/baolong-case-management-demo](https://github.com/fci1007-design/baolong-case-management-demo)，並將本機 `origin` 指向該來源庫。
-- 目標分支：`main`；內容為商務版介面、三產品類別、數量／進度及所有必要原始碼與說明。
-- 目前狀態：來源庫建立完成，提交與推送待執行，完成證據將於推送後補記。
-- 環境變數：無；不含瀏覽器操作資料及忽略的 artifacts。
-- 這是原始碼版本保存，未授權或執行任何網站部署；不啟用 Pages、不更新原 Sites。
+- 依 Aaron 本輪指示，已建立並推送至私人儲存庫：[https://github.com/fci1007-design/baolong-case-management-demo](https://github.com/fci1007-design/baolong-case-management-demo)。
+- 帳號／擁有者：`fci1007-design`；分支 `main`；本機 `origin` 為該儲存庫，追蹤 `origin/main`。
+- 功能版本 commit：`f8152ea1308a75e6060602463f7a8ab056163eb8`。包括商務版介面、櫥櫃／晶石板／酒品流程、產品數量、報表及說明。
+- 已驗證：`git ls-remote --heads origin main` 與本機 HEAD 完全相同；GitHub API `private=true`、`default_branch=main`、`has_pages=false`；遠端 dist 的 6 個資產存在，包含 products.js。
+- 本紀錄為推送後補記，將另行以文件提交保存；查詢最終文件 commit 可執行 `git log -1 --oneline`。
+- Git 作者身分只設定在此專案，使用 GitHub noreply 信箱；未改全域設定。
+- 必要環境變數：無；忽略的 artifacts、瀏覽器操作資料與暫存檔未上傳。
+- 沒有網站部署、沒有啟用 GitHub Pages，也沒有更新原 Sites。
 
 ## 2026-10-28 00:39:17 +0800：三產品類別擴充，僅本機
 
