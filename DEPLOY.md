@@ -1,5 +1,15 @@
 # 發布紀錄
 
+## 2026-10-28 01:04:38 +0800：GitHub Pages 首次發布成功
+
+- 公開展示網址：<https://fci1007-design.github.io/baolong-case-management-demo/>；HTTPS 已啟用，來源儲存庫維持私人。
+- 部署環境：GitHub Pages / github-pages，GitHub Actions workflow 模式；僅發布 `dist/`。
+- 部署來源：main，commit `d22e193a4a7ab0130dde62100a129dea44b5c51e`；[Actions run](https://github.com/fci1007-design/baolong-case-management-demo/actions/runs/40546768132) 已完成且 conclusion=success。
+- 驗證通過：公開 HTML、app.js、data.js、products.js、styles.css、favicon.svg 均 HTTP 200；六檔 SHA-256 與本機 dist 完全一致。GitHub API 確認 has_pages=true、private=true。
+- Chrome 線上實測通過：首頁顯示正常，酒品類別可切換，案件看板顯示專屬階段、瓶／箱數及最後更新日期。截圖 `artifacts/demo-github-pages.png` 為本機證據，不發布。
+- 必要自訂環境變數／密鑰：無。未變更產品程式；本輪未重跑完整產品回歸與三尺寸驗證，沿用前輪結果。
+- 後續 main 的 dist 或 workflow 變更自動發布，純文件提交不觸發；本次成功紀錄另以文件提交推送。未使用 Sites。
+
 ## 2026-10-28 01:02:20 +0800：啟用 GitHub Pages，首次發布準備
 
 - Aaron 明確要求啟用 GitHub Pages，覆蓋前輪不部署的限制；不使用 Sites。

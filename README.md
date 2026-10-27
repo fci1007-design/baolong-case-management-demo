@@ -2,7 +2,7 @@
 
 可操作的繁體中文展示系統，紅黑視覺，資料與人名均為虛構。包含營運總覽、客戶詢問與門市指派、案件看板、拜訪紀錄、客戶洽談、客戶挽回分析、建案總覽與營運報表。
 
-展示網址：[GitHub Pages](https://fci1007-design.github.io/baolong-case-management-demo/)（首次發布進行中）。
+展示網址：[GitHub Pages](https://fci1007-design.github.io/baolong-case-management-demo/)。
 
 原始碼儲存庫：[fci1007-design/baolong-case-management-demo](https://github.com/fci1007-design/baolong-case-management-demo)維持私人；Pages 展示網站公開，本機啟動器仍可使用。原 Sites 僅保留歷史紀錄。
 

@@ -1,15 +1,17 @@
 # 寶隆 Demo 交接
 
-更新時間（Asia/Taipei）：2026-10-28 01:02:20 +0800
+更新時間（Asia/Taipei）：2026-10-28 01:04:38 +0800
 
 ## 最新狀態
 
-- 本輪目標／授權：Aaron 要求啟用 GitHub Pages，已授權此平台發布，不再沿用前輪「只推 GitHub、不部署」限制；原始碼仍維持私人，不使用 Sites。
-- 已完成：GitHub Pages API 建立成功，workflow 模式，網站 public=true、HTTPS=true；新增只發布 dist 的 `.github/workflows/pages.yml`，README 與 AGENTS 已更新授權及入口。
-- 網址由 API 回傳：`https://fci1007-design.github.io/baolong-case-management-demo/`；目前首次部署尚未完成，不宣稱網站可用。
-- 已確認：Actions 啟用且允許官方 actions；dist 6 檔與 HTML 相對資產路徑有效。版本參考官方文件與 release，未改產品程式。
-- Git：main，開工 HEAD `e28aae843c0299d45d37a79c278b286ac55ae822`，開工乾淨；本輪 workflow 與文件待提交。遠端仍為 fci1007-design/baolong-case-management-demo。
-- 下一步第一項：提交 workflow 及文件並推送 main，追蹤 Deploy GitHub Pages run，成功後檢查網站 HTTP 與三類產品資產，再補記發布結果。
+- 本輪目標已完成：依 Aaron 指示啟用 GitHub Pages；網站公開、原始碼儲存庫仍私人，不使用 Sites。
+- 展示網址：<https://fci1007-design.github.io/baolong-case-management-demo/>，已可公開瀏覽，HTTPS=true；GitHub API has_pages=true、private=true。
+- 實際完成：新增 `.github/workflows/pages.yml`，只發布 dist；推送 main 的 dist／workflow 變更或手動執行觸發。AGENTS、README、DEPLOY 已更新發布授權、入口與結果；沒有變更產品程式。
+- Git：main，部署來源 commit `d22e193a4a7ab0130dde62100a129dea44b5c51e` 已提交且推送，遠端 main 已核對相同。此次驗證紀錄將另行以文件提交推送；用 `git log -1 --oneline` 核對最終文件 HEAD，不以部署來源 SHA 代表永久最新 HEAD。
+- 發布證據：[Actions run](https://github.com/fci1007-design/baolong-case-management-demo/actions/runs/40546768132) completed / success。六個公開靜態檔案均 HTTP 200，SHA-256 與本機 dist 完全相同；`git diff --check` 通過。
+- Chrome 線上實測：營運總覽載入、酒品類別切換與專屬案件看板（階段、瓶／箱、最後更新日期）正常。截圖 `artifacts/demo-github-pages.png` 維持忽略，未上傳；展示分頁保留。
+- 未執行：完整回歸、手機／平板重測及正式權限驗證；本輪只改發布設定，前輪功能驗證仍見下方。沒有已知本輪未解決失敗，沒有背景命令。
+- 下一步第一項：開啟上方 Pages 網址展示；後續若修改程式，於本目錄執行 `git status -sb`，確認變更後提交及推送 main，並於 Actions 檢查發布結果。
 
 ## 前輪 GitHub 來源保存（歷史）
 
@@ -37,7 +39,7 @@
 - 相關檔案：`dist/products.js`（新增）、`dist/data.js`、`dist/app.js`、`dist/styles.css`、`dist/index.html`；README 主規格、AGENTS 與 DEPLOY 已同步。
 - Git：獨立 `main`，目前 commit `b838d979726c7812543c60e6750b99f423b0079b`。延續前輪 8 個追蹤檔未提交變更，另新增未追蹤 `dist/products.js`；本輪未提交、未推送、未部署。未修改父工作區或其他專案。
 
-## 本輪驗證
+## 前輪功能驗證（歷史）
 
 - 已通過：`node --check dist/products.js`、`node --check dist/data.js`、`node --check dist/app.js`、`git diff --check`。
 - Node VM 已通過：原 30／新增 12／新增 12 案件與階段均有效；片數為正整數、酒品單位限定瓶／箱；數量 1.5、酒品使用片等錯誤被拒絕；舊資料升級保留備註與狀態日期，重跑沒有重複 ID，組織與人員參照有效。
@@ -51,7 +53,7 @@
 - 未執行：完整自動化回歸、實際滑鼠拖曳、CSV 實際下載／Excel 相容、照片上傳、正式權限／外部介接、負載及線上驗收；本輪依純 Demo 範圍做精簡驗證。
 - Preview 使用 `python3 serve.py --port 4180`、session 43285，交付時已停止；其他既有服務未動。本輪無背景程序。
 
-## 未完成與下一步
+## 前輪未完成與下一步（歷史）
 
 - 本輪需求已完成，僅供本機展示；流程是依 Aaron 描述設計的 Demo，正式產品若要上線再裁定營運規則與資料權限。
 - 下一步第一項：在本資料夾執行 `open start-demo.command`，在上方「產品類別」切換晶石板／酒品，再進案件看板操作。原有瀏覽器紀錄不必還原。
@@ -65,3 +67,5 @@
 - 2026-10-28 00:39:17 +0800：加入三產品類別、專屬進度、晶石板片數與酒品瓶／箱、建案多產品明細及分類報表；保留原資料，本機精簡驗證通過，未提交／推送／部署。
 
 - 2026-10-28 00:48:11 +0800：完整專案已推送至私人 GitHub 儲存庫，功能 commit f8152ea1308a75e6060602463f7a8ab056163eb8；遠端 SHA、檔案及未啟用 Pages 已確認，未部署。
+
+- 2026-10-28 01:04:38 +0800：啟用 GitHub Pages；部署 d22e193，Actions success，六檔 HTTP 200 且雜湊一致，Chrome 線上看板驗證通過，來源仍私人。
