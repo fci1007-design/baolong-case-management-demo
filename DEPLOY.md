@@ -1,5 +1,14 @@
 # 發布紀錄
 
+## 2026-10-28 01:02:20 +0800：啟用 GitHub Pages，首次發布準備
+
+- Aaron 明確要求啟用 GitHub Pages，覆蓋前輪不部署的限制；不使用 Sites。
+- GitHub Pages API 建立成功，build_type=workflow、public=true、https_enforced=true；儲存庫仍為私人。
+- GitHub 回傳網址：<https://fci1007-design.github.io/baolong-case-management-demo/>。
+- Workflow：`.github/workflows/pages.yml`，僅發布 dist，main 的 dist／workflow 推送及手動執行觸發，使用 github-pages environment。
+- Actions 版本依官方 release 查證；目前只完成設定，workflow 推送與成功發布尚待驗證，不把 API 建立當成網站已上線。
+- 必要自訂環境變數／密鑰：無。歷史 Sites 與其他服務不變。
+
 ## 2026-10-28 00:48:11 +0800：GitHub 原始碼推送成功
 
 - 依 Aaron 本輪指示，已建立並推送至私人儲存庫：[https://github.com/fci1007-design/baolong-case-management-demo](https://github.com/fci1007-design/baolong-case-management-demo)。

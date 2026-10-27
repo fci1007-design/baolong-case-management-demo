@@ -1,8 +1,17 @@
 # 寶隆 Demo 交接
 
-更新時間（Asia/Taipei）：2026-10-28 00:48:11 +0800
+更新時間（Asia/Taipei）：2026-10-28 01:02:20 +0800
 
 ## 最新狀態
+
+- 本輪目標／授權：Aaron 要求啟用 GitHub Pages，已授權此平台發布，不再沿用前輪「只推 GitHub、不部署」限制；原始碼仍維持私人，不使用 Sites。
+- 已完成：GitHub Pages API 建立成功，workflow 模式，網站 public=true、HTTPS=true；新增只發布 dist 的 `.github/workflows/pages.yml`，README 與 AGENTS 已更新授權及入口。
+- 網址由 API 回傳：`https://fci1007-design.github.io/baolong-case-management-demo/`；目前首次部署尚未完成，不宣稱網站可用。
+- 已確認：Actions 啟用且允許官方 actions；dist 6 檔與 HTML 相對資產路徑有效。版本參考官方文件與 release，未改產品程式。
+- Git：main，開工 HEAD `e28aae843c0299d45d37a79c278b286ac55ae822`，開工乾淨；本輪 workflow 與文件待提交。遠端仍為 fci1007-design/baolong-case-management-demo。
+- 下一步第一項：提交 workflow 及文件並推送 main，追蹤 Deploy GitHub Pages run，成功後檢查網站 HTTP 與三類產品資產，再補記發布結果。
+
+## 前輪 GitHub 來源保存（歷史）
 
 - 本輪目標已完成：依 Aaron 明確指示，將目前完整專案提交並推上自己的 GitHub；維持不部署網站。
 - 儲存庫：`https://github.com/fci1007-design/baolong-case-management-demo`，私人，擁有者 `fci1007-design`；預設分支與本機分支均為 `main`，`origin` 指向該 GitHub 儲存庫，已設定追蹤 `origin/main`。

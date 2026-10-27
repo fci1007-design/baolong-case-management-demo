@@ -2,7 +2,9 @@
 
 可操作的繁體中文展示系統，紅黑視覺，資料與人名均為虛構。包含營運總覽、客戶詢問與門市指派、案件看板、拜訪紀錄、客戶洽談、客戶挽回分析、建案總覽與營運報表。
 
-原始碼儲存庫：[fci1007-design/baolong-case-management-demo](https://github.com/fci1007-design/baolong-case-management-demo)（私人）。系統目前在本機執行，沒有部署網站；原 Sites 發布僅保留歷史紀錄。
+展示網址：[GitHub Pages](https://fci1007-design.github.io/baolong-case-management-demo/)（首次發布進行中）。
+
+原始碼儲存庫：[fci1007-design/baolong-case-management-demo](https://github.com/fci1007-design/baolong-case-management-demo)維持私人；Pages 展示網站公開，本機啟動器仍可使用。原 Sites 僅保留歷史紀錄。
 
 ## 產品類別與進度
 
@@ -67,4 +69,7 @@
 
 ## 發布與交接
 
-Sites 發布狀態見 `DEPLOY.md`，最新實作、驗證與後續見 `CHAT_HANDOFF.md`。
+- GitHub Actions workflow：`.github/workflows/pages.yml`，只將 `dist/` 上傳為 Pages artifact，不發布 README、交接、啟動器或歷史 Sites 設定。
+- 推送 main 的 `dist/**` 或 workflow 本身變更時自動發布；亦可於 Actions 手動執行。純文件提交不觸發重發。
+- 使用 GitHub 內建 token 與 OIDC，不需新增密鑰或環境變數。
+- 發布來源及實際結果見 `DEPLOY.md`；最新狀態見 `CHAT_HANDOFF.md`。
