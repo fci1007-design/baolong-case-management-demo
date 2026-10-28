@@ -1,8 +1,15 @@
 # 寶隆 Demo 交接
 
-更新時間（Asia/Taipei）：2026-10-28 01:04:38 +0800
+更新時間（Asia/Taipei）：2026-10-28 21:26:36 +0800
 
 ## 最新狀態
+
+- 2026-10-28 21:26:36 +0800 最新完成：依 Aaron 明確授權，GitHub 儲存庫已從私人改為公開；原始碼及既有 Git 歷史可由任何持有連結的人查看。此項取代下方前輪「來源私人」狀態。
+- 公開來源：<https://github.com/fci1007-design/baolong-case-management-demo>；未帶認證的 HTTP 檢查儲存庫頁、GitHub API 及 Pages 網址均 200，API private=false、visibility=public、has_pages=true。
+- 本輪無產品程式變更；AGENTS、README、DEPLOY 與本交接已更新，未重跑功能測試或重新部署（僅變更可見性與文件）。開工 main / HEAD `21e4994d1a58919c897ea4022fe3ab553983a49f`，乾淨；文件將提交及推送，最終 HEAD 用 `git log -1 --oneline` 核對。
+- 本輪無未完成阻礙；下一步第一項：分享上述 GitHub 來源連結，若要讓對方操作 Demo 則分享下方 Pages 連結。
+
+### 前輪 Pages 啟用結果（歷史）
 
 - 本輪目標已完成：依 Aaron 指示啟用 GitHub Pages；網站公開、原始碼儲存庫仍私人，不使用 Sites。
 - 展示網址：<https://fci1007-design.github.io/baolong-case-management-demo/>，已可公開瀏覽，HTTPS=true；GitHub API has_pages=true、private=true。
@@ -69,3 +76,5 @@
 - 2026-10-28 00:48:11 +0800：完整專案已推送至私人 GitHub 儲存庫，功能 commit f8152ea1308a75e6060602463f7a8ab056163eb8；遠端 SHA、檔案及未啟用 Pages 已確認，未部署。
 
 - 2026-10-28 01:04:38 +0800：啟用 GitHub Pages；部署 d22e193，Actions success，六檔 HTTP 200 且雜湊一致，Chrome 線上看板驗證通過，來源仍私人。
+
+- 2026-10-28 21:26:36 +0800：依授權改為公開 GitHub 儲存庫；匿名存取來源與 Pages 均 HTTP 200，已同步文件。

@@ -4,7 +4,7 @@
 
 展示網址：[GitHub Pages](https://fci1007-design.github.io/baolong-case-management-demo/)。
 
-原始碼儲存庫：[fci1007-design/baolong-case-management-demo](https://github.com/fci1007-design/baolong-case-management-demo)維持私人；Pages 展示網站公開，本機啟動器仍可使用。原 Sites 僅保留歷史紀錄。
+原始碼儲存庫：[fci1007-design/baolong-case-management-demo](https://github.com/fci1007-design/baolong-case-management-demo)已公開，持有連結即可查看程式碼；Pages 展示網站公開，本機啟動器仍可使用。原 Sites 僅保留歷史紀錄。
 
 ## 產品類別與進度
 

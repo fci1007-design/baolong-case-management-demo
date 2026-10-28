@@ -1,5 +1,12 @@
 # 發布紀錄
 
+## 2026-10-28 21:26:36 +0800：GitHub 儲存庫改為公開
+
+- 依 Aaron 明確要求，將 `fci1007-design/baolong-case-management-demo` 從私人改為公開，讓他人直接查看程式碼與既有提交紀錄。
+- 原始碼網址：<https://github.com/fci1007-design/baolong-case-management-demo>。
+- 未登入 HTTP 驗證：GitHub 儲存庫頁、API 與 Pages 展示網址皆 200；公開 API private=false、visibility=public、has_pages=true。
+- 未修改產品程式、環境變數或重新部署；Pages 原網址保留。本輪文件更新另行提交並推送 main。
+
 ## 2026-10-28 01:04:38 +0800：GitHub Pages 首次發布成功
 
 - 公開展示網址：<https://fci1007-design.github.io/baolong-case-management-demo/>；HTTPS 已啟用，來源儲存庫維持私人。

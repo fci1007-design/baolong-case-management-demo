@@ -6,7 +6,7 @@
 - 主規格與操作入口：`README.md`。原始程式及發布內容在 `dist/`，無外部套件依賴。
 - 以瀏覽器 localStorage 保存展示操作；角色選擇只是展示視角，不是正式權限保護。
 - 輕量驗證：JavaScript 語法、主要操作流程、三尺寸排版；不擴大成正式系統驗證。
-- 最新授權：Aaron 已明確要求啟用 GitHub Pages。可將 `dist/` 經 `.github/workflows/pages.yml` 發布至本專案 Pages；原始碼儲存庫維持私人，展示網站公開。main 的 dist 或 Pages workflow 變更會自動發布，純文件提交不觸發；不使用 Sites 或其他部署平台。`.openai/hosting.json` 僅為歷史。
+- 最新授權：Aaron 已明確要求啟用 GitHub Pages。可將 `dist/` 經 `.github/workflows/pages.yml` 發布至本專案 Pages；Aaron 最新授權已將原始碼儲存庫改為公開，展示網站亦公開。main 的 dist 或 Pages workflow 變更會自動發布，純文件提交不觸發；不使用 Sites 或其他部署平台。`.openai/hosting.json` 僅為歷史。
 - 介面使用一般商務用語：客戶詢問、拜訪紀錄、客戶洽談、客戶挽回分析。移除行銷標語與鼓動式文案，優先呈現工作資料。
 - 文字須深色且易讀；主要內文與表格約 16 px，輔助文字 14–15 px，手機不得為塞入欄位而縮小字體。
 - 案件「最後更新日期」對應 `statusChangedAt`，只在狀態變更時更新；拜訪及移交不得改寫此時間。卡片、列表、明細使用同一個格式化函式。
